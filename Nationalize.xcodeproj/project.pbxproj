@@ -9,14 +9,15 @@
 /* Begin PBXBuildFile section */
 		776382D52A8D7B09005F6798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776382D42A8D7B09005F6798 /* AppDelegate.swift */; };
 		776382D72A8D7B09005F6798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776382D62A8D7B09005F6798 /* SceneDelegate.swift */; };
-		776382D92A8D7B09005F6798 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776382D82A8D7B09005F6798 /* ViewController.swift */; };
-		776382DC2A8D7B09005F6798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776382DA2A8D7B09005F6798 /* Main.storyboard */; };
+		776382D92A8D7B09005F6798 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776382D82A8D7B09005F6798 /* FirstViewController.swift */; };
 		776382DF2A8D7B09005F6798 /* Nationalize.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 776382DD2A8D7B09005F6798 /* Nationalize.xcdatamodeld */; };
 		776382E12A8D7B0B005F6798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776382E02A8D7B0B005F6798 /* Assets.xcassets */; };
 		776382E42A8D7B0B005F6798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776382E22A8D7B0B005F6798 /* LaunchScreen.storyboard */; };
 		776382EF2A8D7B0B005F6798 /* NationalizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776382EE2A8D7B0B005F6798 /* NationalizeTests.swift */; };
 		776382F92A8D7B0B005F6798 /* NationalizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776382F82A8D7B0B005F6798 /* NationalizeUITests.swift */; };
 		776382FB2A8D7B0B005F6798 /* NationalizeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776382FA2A8D7B0B005F6798 /* NationalizeUITestsLaunchTests.swift */; };
+		776383092A8D7BFA005F6798 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 776383082A8D7BFA005F6798 /* SnapKit */; };
+		7763830B2A8D811D005F6798 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7763830A2A8D811D005F6798 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +41,7 @@
 		776382D12A8D7B09005F6798 /* Nationalize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nationalize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		776382D42A8D7B09005F6798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		776382D62A8D7B09005F6798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		776382D82A8D7B09005F6798 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		776382DB2A8D7B09005F6798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		776382D82A8D7B09005F6798 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		776382DE2A8D7B09005F6798 /* Nationalize.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nationalize.xcdatamodel; sourceTree = "<group>"; };
 		776382E02A8D7B0B005F6798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		776382E32A8D7B0B005F6798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,7 @@
 		776382F42A8D7B0B005F6798 /* NationalizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NationalizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		776382F82A8D7B0B005F6798 /* NationalizeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalizeUITests.swift; sourceTree = "<group>"; };
 		776382FA2A8D7B0B005F6798 /* NationalizeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalizeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7763830A2A8D811D005F6798 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776383092A8D7BFA005F6798 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,8 +105,8 @@
 			children = (
 				776382D42A8D7B09005F6798 /* AppDelegate.swift */,
 				776382D62A8D7B09005F6798 /* SceneDelegate.swift */,
-				776382D82A8D7B09005F6798 /* ViewController.swift */,
-				776382DA2A8D7B09005F6798 /* Main.storyboard */,
+				776382D82A8D7B09005F6798 /* FirstViewController.swift */,
+				7763830A2A8D811D005F6798 /* SecondViewController.swift */,
 				776382E02A8D7B0B005F6798 /* Assets.xcassets */,
 				776382E22A8D7B0B005F6798 /* LaunchScreen.storyboard */,
 				776382E52A8D7B0B005F6798 /* Info.plist */,
@@ -146,6 +148,9 @@
 			dependencies = (
 			);
 			name = Nationalize;
+			packageProductDependencies = (
+				776383082A8D7BFA005F6798 /* SnapKit */,
+			);
 			productName = Nationalize;
 			productReference = 776382D12A8D7B09005F6798 /* Nationalize.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 776382C82A8D7B09005F6798;
+			packageReferences = (
+				776383072A8D7BFA005F6798 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 776382D22A8D7B09005F6798 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,7 +244,6 @@
 			files = (
 				776382E42A8D7B0B005F6798 /* LaunchScreen.storyboard in Resources */,
 				776382E12A8D7B0B005F6798 /* Assets.xcassets in Resources */,
-				776382DC2A8D7B09005F6798 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				776382D92A8D7B09005F6798 /* ViewController.swift in Sources */,
+				776382D92A8D7B09005F6798 /* FirstViewController.swift in Sources */,
 				776382D52A8D7B09005F6798 /* AppDelegate.swift in Sources */,
 				776382DF2A8D7B09005F6798 /* Nationalize.xcdatamodeld in Sources */,
+				7763830B2A8D811D005F6798 /* SecondViewController.swift in Sources */,
 				776382D72A8D7B09005F6798 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,14 +309,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		776382DA2A8D7B09005F6798 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				776382DB2A8D7B09005F6798 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		776382E22A8D7B0B005F6798 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -445,7 +445,6 @@
 				INFOPLIST_FILE = Nationalize/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +471,6 @@
 				INFOPLIST_FILE = Nationalize/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -600,6 +598,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		776383072A8D7BFA005F6798 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		776383082A8D7BFA005F6798 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 776383072A8D7BFA005F6798 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		776382DD2A8D7B09005F6798 /* Nationalize.xcdatamodeld */ = {
