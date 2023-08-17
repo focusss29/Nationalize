@@ -69,6 +69,26 @@ extension FirstViewController {
     @objc func buttonPredict() {
         let vc2 = SecondViewController()
         navigationController?.pushViewController(vc2, animated: true)
+        vc2.navigationItem.title = textField.text
+        if let url = URL(string: "https://api.nationalize.io/?name=\(textField.text ?? "")") {
+            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                if let error = error {
+                    print("Error \(error)")
+                    return
+                }
+                if let data = data {
+                    let decoder = JSONDecoder()
+                    if let decodedData = try? decoder.decode(Welcome.self, from: data) {
+                        DispatchQueue.main.async {
+                            vc2.countries = decodedData.country
+                            vc2.tableView.reloadData()
+                        }
+                    }
+                }
+            }
+            task.resume()
+        }
     }
 }
+
 
